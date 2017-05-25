@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.example.edoardo.gymmobile">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityAllen"></activity>
+        <activity android:name=".ActivityCalend"></activity>
+        <activity android:name=".ActivityImpost"></activity>
+        <activity android:name=".ActivityScheda"></activity>
+        <activity android:name=".Tab_Allen"></activity>
+        <activity android:name=".Esercizio1"></activity>
+        <activity android:name=".Esercizio2"></activity>
+        <activity android:name=".PlayList"
+            android:noHistory="true">
+        </activity>
+    </application>
+
+</manifest>

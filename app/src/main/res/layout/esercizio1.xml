@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#009900"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.40"
+        android:paddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Cyclette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/textcycl"
+                android:layout_weight="0.40"
+                android:gravity="center"/>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="314dp"
+                android:id="@+id/imageView"
+                android:layout_weight="0.40" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:text="Muscoli principali:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/textView2"
+                android:layout_weight="0.40" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/musclesprinc"
+                android:layout_weight="0.40" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:text="Muscoli Secondari:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_weight="0.40" />
+            <TextView
+                android:text="Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/musclessecond"
+                android:textSize="20dp"
+                android:layout_weight="0.40" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:text="Istruzioni:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/text3"
+                android:textSize="20dp"
+                android:layout_weight="0.40" />
+            <TextView
+                android:text="Preparazione:"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFF00"
+                android:id="@+id/text4"
+                android:textSize="20dp"
+                android:layout_weight="0.40" />
+            <TextView
+                android:text="Descrizione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descript"
+                android:textSize="20dp"
+                android:layout_weight="0.40" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:text="Esecuzione:"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFF00"
+                android:id="@+id/text5"
+                android:textSize="20dp"
+                android:layout_weight="0.40" />
+            <TextView
+                android:text="Exec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exec"
+                android:textSize="20dp"
+                android:layout_weight="0.40" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

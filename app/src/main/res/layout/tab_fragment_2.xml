@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <Button
+        android:drawableLeft="@mipmap/images"
+        android:text="Allenamento"
+        android:minWidth="180dp"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_width="360dp"
+        android:id="@+id/allenamento"/>
+
+    <Space
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <Button
+        android:drawableLeft="@mipmap/listicon32"
+        android:text="Scheda"
+        android:minWidth="180dp"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scheda"/>
+
+    <Space
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <Button
+        android:drawableLeft="@mipmap/calendar128"
+        android:text="Calendario"
+        android:minWidth="180dp"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/button11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/calendario"/>
+
+    <Space
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <Button
+        android:drawableLeft="@mipmap/setting"
+        android:text="Impostazioni"
+        android:minWidth="180dp"
+        style="@android:style/Widget.Material.Light.Button.Inset"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/button11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/impostazioni"/>
+
+
+</LinearLayout>
