@@ -143,10 +143,13 @@ public class PlayList extends AppCompatActivity {
             public void onClick(View view) {
                 int time ;
 
-                if (n>=t.getserie()) { //controllo se le serie sono state tutte effettuate, di conseguenza attendo più tempo for rest//
+                if (n>=t.getserie()) {
+                    //controllo se le serie sono state tutte effettuate, di conseguenza attendo più tempo for rest//
 
-                    if (t.getserie() == 0) {// tempo da trascorrere per esercizi Cardio//
+                    if (t.getserie() == 0) {
+                        // tempo da trascorrere per esercizi Cardio
                         time = 30000;
+
                         startStop(time);
                         setWeight.setVisibility(View.INVISIBLE);
                         addWeight.setVisibility(View.INVISIBLE);
@@ -155,6 +158,7 @@ public class PlayList extends AppCompatActivity {
                     } else { // tempo che intercorre tra un esercizio e l'altro
 
                         time = 60000;
+
                         startStop(time);
                         // Toasty.success(PlayList.this, "Esercizio completato", Toast.LENGTH_SHORT, true).show();
                     }
@@ -171,6 +175,9 @@ public class PlayList extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"Peso modificato",Toast.LENGTH_SHORT).show();
                             t.setpeso(Integer.parseInt(setWeight.getText().toString()));
 
+                            setWeight.setText("");
+
+
 
 
 
@@ -178,7 +185,7 @@ public class PlayList extends AppCompatActivity {
                         }
                     });
 
-                        //Una volta trascorso il tempo di recupero passo all'esercizio successivo //
+                        //Una volta trascorso il tempo di recupero passo all'esercizio successivo
                         handler1.postDelayed(new Runnable() {
                             @Override
                             public void run() {
@@ -271,9 +278,12 @@ public class PlayList extends AppCompatActivity {
                     addWeight.setOnClickListener(new View.OnClickListener() { // Edit text per inserire il peso
                         @Override
                         public void onClick(View v) {
-                            setWeight.setVisibility(View.INVISIBLE);
-                            addWeight.setVisibility(View.INVISIBLE);
-                            done.setVisibility(View.VISIBLE);
+                            //setWeight.setVisibility(View.INVISIBLE);
+                            //addWeight.setVisibility(View.INVISIBLE);
+                            //done.setVisibility(View.VISIBLE);
+
+                            Toast.makeText(getApplicationContext(),"Peso modificato",Toast.LENGTH_SHORT).show();
+                            t.setpeso(Integer.parseInt(setWeight.getText().toString()));
                         }
                     });
 
